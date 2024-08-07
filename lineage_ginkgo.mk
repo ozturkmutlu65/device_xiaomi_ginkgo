@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2020 ArrowOS
+# Copyright (C) 2024 LineageOS 
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -23,18 +23,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from ginkgo device
 $(call inherit-product, device/xiaomi/ginkgo/device.mk)
 
-# Inherit some common AlphaDroid stuff
+# Inherit some common LineageOS stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Device config
-TARGET_HAS_UDFPS := false
+# Blur
 TARGET_ENABLE_BLUR := false
-TARGET_EXCLUDES_AUDIOFX := true
-TARGET_FACE_UNLOCK_SUPPORTED := true
 
-# Maintainer
-ALPHA_BUILD_TYPE := Official
-ALPHA_MAINTAINER := eklerismunir
+#UDFPS
+EXTRA_UDFPS_ANIMATIONS := false
+
+# Boot Animation
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier
 PRODUCT_NAME := lineage_ginkgo
