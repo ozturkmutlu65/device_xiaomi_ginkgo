@@ -35,6 +35,9 @@ EXTRA_UDFPS_ANIMATIONS := false
 # Boot Animation
 TARGET_BOOT_ANIMATION_RES := 1080
 
+# Face Unlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
 # Device identifier
 PRODUCT_NAME := lineage_ginkgo
 PRODUCT_DEVICE := ginkgo
