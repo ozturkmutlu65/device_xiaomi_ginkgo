@@ -38,6 +38,9 @@ TARGET_BOOT_ANIMATION_RES := 1080
 # Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
+# Quick Tap
+TARGET_SUPPORTS_QUICK_TAP := true
+
 # Device identifier
 PRODUCT_NAME := lineage_ginkgo
 PRODUCT_DEVICE := ginkgo
