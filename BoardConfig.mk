@@ -17,6 +17,9 @@ BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
 BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
 BUILD_BROKEN_ENFORCE_SYSPROP_OWNER := true
 
+# MiuiCamera
+-include vendor/xiaomi/miuicamera/BoardConfigAnx.mk
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
