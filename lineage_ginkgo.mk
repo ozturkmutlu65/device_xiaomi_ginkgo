@@ -26,6 +26,18 @@ $(call inherit-product, device/xiaomi/ginkgo/device.mk)
 # Inherit some common LineageOS stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Matrixx Stuff
+MATRIXX_BUILD_TYPE := UNOFFICIAL
+MATRIXX_CHIPSET := SM6125
+MATRIXX_BATTERY := 4000mAh
+MATRIXX_DISPLAY :=  1080x2340
+MATRIXX_MAINTAINER := mrgebesturtle
+
+# Exclude prebuilt apps
+TARGET_EXCLUDES_AUDIOFX := true
+TARGET_EXCLUDES_AUXIO := true
+TARGET_EXCLUDES_VIA := true
+
 # Blur
 TARGET_ENABLE_BLUR := false
 
