@@ -90,8 +90,6 @@ TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_WIDTH := 1080
 
 # Camera
-$(call inherit-product-if-exists, vendor/xiaomi/miuicamera/config.mk)
-
 PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0.vendor \
     android.hardware.camera.provider@2.4-impl \
