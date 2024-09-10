@@ -24,7 +24,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 $(call inherit-product, device/xiaomi/ginkgo/device.mk)
 
 # Inherit some common LineageOS stuff
-$(call inherit-product, vendor/euclid/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Blur
 TARGET_ENABLE_BLUR := false
@@ -44,13 +44,8 @@ TARGET_SUPPORTS_QUICK_TAP := true
 # Eppe
 TARGET_DISABLE_EPPE := true
 
-EUCLID_MAINTAINER := mrgebesturtle 
-EUCLID_BUILD_TYPE := UNOFFICIAL
-EUCLID_GAPPS := false
-TARGET_SUPPORTS_TOUCHGESTURES := true
-
 # Device identifier
-PRODUCT_NAME := euclid_ginkgo
+PRODUCT_NAME := lineage_ginkgo
 PRODUCT_DEVICE := ginkgo
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 8/8T
