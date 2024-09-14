@@ -481,9 +481,9 @@ PRODUCT_COPY_FILES += \
 # Wifi
 PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
+    libcld80211 \
     hostapd \
     libwifi-hal-ctrl \
-    libwifi-hal-qcom \
     libwpa_client \
     TetheringConfigOverlay \
     WifiOverlay \
