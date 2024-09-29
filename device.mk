@@ -31,6 +31,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     com.dsi.ant@1.0.vendor
 
+# Dynamic Partitions
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+PRODUCT_BUILD_SUPER_PARTITION := false
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \
